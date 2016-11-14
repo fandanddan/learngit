@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <link rel="stylesheet" href="../css/xiangqing.css">
+    <script src="../js/jquery.js"></script>      
+    <script>
+        $(function(){
+            var oBox = $(".thing-main-top-img");
+            var oBig = $(".img-big img");
+            var ali = $(".img-small-ul li");
+
+            ali.mouseover(function(){      
+                ali.attr("class","");
+                ali.eq($(this).index()).attr("class","small-active");
+                oBig.attr("src",$(this).find("img").attr('src'));
+            })
+        })
+    </script>  
+</head>
+<body>
+    <div class="thing-main">
+        <div class="thing-main-center">
+            <div class="thing-main-top">
+                <div class="thing-main-top-img">
+                    <div class="img-small">
+                        <ul class="img-small-ul">
+                            <li class="small-active"><a href="#"><img src="../images/2015093019140361614ead1d.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/20150930191406bc384fe971.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/2015093019140702298d7dbb.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/20150930191409893f12c808.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="img-big">
+                        <img src="../images/2015093019140361614ead1d.jpg" alt="">        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>品牌文化</title>
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/qhzj.css">  
+    <link rel="stylesheet" href="../css/pinpai.css">  
+	<link rel="stylesheet" href="../css/dingzhi.css">  
+    <script src="../js/jquery.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/lunbo.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+    <script>
+        $(function(){
+            var userlogin = getCookie("name");
+            var userloginE = getCookie("nameE");
+            if(userlogin != ""){
+                $(".userlogin").text(userlogin);
+            }else if(userloginE != ""){
+                $(".userlogin").text(userloginE);
+            }else{
+            }
+            
+        })
+    </script>
+</head>
+<body>
+	<div class="index-nav" id="backtop">
+        <div class="index-nav-center">
+            <div class="index-nav-center1"><a href="index.html"></a></div>
+            <div class="index-nav-center2">
+                <div class="index-nav-center2-top">
+                    <ul>
+                        <li><a href="login.html" style="width: 88px;overflow: hidden;margin-right: 10px;margin-left: -22px;"><span class="userlogin">登录</span></a></li>
+                        <li><a href="sign.html" id="pink">加入DR族</a></li>
+                        <li><a><img src="../images/phone.png">400 01 13520</a></li>
+                        <li class="app">
+                            <a href="#"><img src="../images/iphone.png">DR族APP</a>
+                            <div class="app-hid">
+                                <img src="../images/APP_ewm.jpg" alt="">
+                                <p>下载暖心的情侣互动APP</p>
+                                <p>DR族专属</p>
+                            </div>
+                        </li>
+                        <li class="lang">
+                            <a href="#">中文（简体）</a>
+                            <i id="jiantou1"></i>
+                            <div class="lang-hid">
+                                <a href="#">中文（繁体）</a>
+                                <a href="">English</a>
+                            </div>                  
+                        </li>
+                        <li id="right">
+                            <a href="#">所在城市店铺：</a>
+                            <div id="shop-hid">
+                                <a href="#">香港</a>
+                                <a href="#">上海</a>
+                                <a href="#">北京</a>
+                                <a href="#">深圳</a>
+                                <a href="#">广州</a>
+                                <a href="#">南京</a>
+                                <a href="#">成都</a>
+                                <a href="#">天津</a>
+                                <a href="#">昆明</a>
+                                <a href="#">宁波</a>
+                                <a href="#">大连</a>
+                                <a href="#">长沙</a>
+                                <a href="#">重庆</a>
+                                <a href="#">武汉</a>
+                                <a href="#">郑州</a>
+                                <a href="#">杭州</a>
+                                <a href="#">苏州</a>
+                                <a href="#">无锡</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="index-nav-center2-bottom">
+                    <div class="chaxun">
+                        <span><i id="jiantou"></i>中国大陆</span>
+                        <div id="chaxun-hid">
+                            <a href="#">海外地区</a>
+                            <a href="">港澳台</a>
+                            <a href="">其他</a>
+                        </div>
+                        <input type="text" value="请输入身份证号验证真爱承诺">
+                        <a href="#">DR真爱查询</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="index-nav2">
+            <div class="index-nav-center">
+                <ul class="list">  <!-- list -->
+                    <!-- DR -->
+                    <li>
+                        <a href="index.html" id="list-a">DR</a>
+                        <!-- ul(nav) slide
+                                li(aaa) -->
+                            <div class="nav-hid">
+                                <div class="nav-hid-left">
+                                    <img src="../images/drword.png" alt="">
+                                    <a href="sign.html" class="hid-join">加入DR族</a>
+                                </div>
+                                <div class="nav-hid-right">
+                                    <img src="../images/drimg.jpg" alt="">
+                                    <a href="" id="hid-chaxun">真爱查询</a>
+                                </div>
+                            </div>
+                    </li>
+                    <!-- 求婚钻戒 -->
+                    <li>
+                        <a href="qhring.html" class="nav2-ul" id="list-a">求婚钻戒</a>
+                        <div class="nav-hid">
+                            <div class="qh-hid-left fl">
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2014092610543039082c76fd.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2015081318151576e08c7f5c.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/201409031259093e45b5ecf0.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/20150930190558ba3bac51e0.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2015093019140361614ead1d.jpg" alt="">
+                                </div>
+                                <ul class="fr">
+                                    <li><a href="qhring.html">稀世粉钻</a></li>
+                                    <li><a href="qhring.html">Love Line系列</a></li>
+                                    <li><a href="qhring.html">Forever系列</a></li>
+                                    <li><a href="qhring.html">My Heart系列</a></li>
+                                    <li><a href="qhring.html">True Love系列</a></li>
+                                </ul>
+                            </div>
+                            <div class="qh-hid-right fr">
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20140902094335966c32bf74.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20141208151441cc5ac80d54.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/201409011559313d34c1c807.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20150129114316f8a2465758.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/201502061050359c37df606b.jpg" alt="">
+                                </div>
+                                <ul class="fl">
+                                    <li><a href="qhring.html">I Swear系列</a></li>
+                                    <li><a href="qhring.html">Just You系列</a></li>
+                                    <li><a href="qhring.html">Princess系列</a></li>
+                                    <li><a href="qhring.html">Believe系列</a></li>
+                                    <li><a href="qhring.html">查看全部商品</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 爱的礼物 -->
+                    <li>
+                        <a href="love.html" id="list-a">爱的礼物</a>
+                        <div class="nav-hid">
+                            <div class="love-hid-left fl">
+                                <div class="love-img fl disnone">
+                                    <img src="../images/2015012912125452b30a7236.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/20150714152021089c7e0a27.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/20141211170306c60c5d8029.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/2015092819013563a1e7c5d7.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/ZHDARRYJEWELRYF15002_1.jpg" alt="">
+                                </div>
+                                <ul class="fr">
+                                    <li><a href="qhring.html">对戒</a></li>
+                                    <li><a href="qhring.html">男戒</a></li>
+                                    <li><a href="qhring.html">吊坠</a></li>
+                                    <li><a href="qhring.html">耳饰</a></li>
+                                    <li><a href="qhring.html">手链/手镯</a></li>
+                                </ul>
+                            </div>
+                            <div class="love-hid-right fr">
+                                <div class="love-img fr disnone">
+                                    <img src="../images/2016060811463267ab8fc9ed.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150928185451092acd12d8.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150930142250b083bc9f9f.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/ZHDARRYJEWELRYF15008_1.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150129121254e8cdb1d2f7.jpg" alt="">
+                                </div>
+                                <ul class="fl">
+                                    <li><a href="qhring.html">十二星座吊坠</a></li>
+                                    <li><a href="qhring.html">纪念日礼物</a></li>
+                                    <li><a href="qhring.html">生日礼物</a></li>
+                                    <li><a href="qhring.html">节日礼物</a></li>
+                                    <li><a href="qhring.html">查看全部商品</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 钻戒定制 -->
+                    <li>
+                        <a href="dingzhi.html" id="list-a">钻戒定制</a>
+                    </li>
+                    <!-- DR实体店 -->
+                    <li>
+                        <a href="drshop.html" id="list-a">DR实体店</a>
+                        <div class="nav-hid">
+                                <div class="nav-hid-left">
+                                    <img src="../images/20151207145102.jpg" alt="">
+                                    <a href="sign.html" id="hid-chaxun">香港店</a>
+                                </div>
+                                <div class="nav-hid-right">
+                                    <img src="../images/201602251354138161e6e6fe.jpg" alt="">
+                                    <a href="sign.html" id="hid-chaxun">重庆观音桥店</a>
+                                </div>
+                            </div>
+                    </li>
+                    <!-- DR品牌文化 -->
+                    <li>
+                        <a href="pinpai.html" id="list-a">DR品牌文化</a>
+                        <div class="nav-hid">
+                            <div class="nav-hid-left">
+                                <img src="../images/navleft1.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">品牌文化</a>
+                            </div>
+                            <div class="nav-hid-right">
+                                <img src="../images/navright1.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">明星推荐</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- DR社区 -->
+                    <li>
+                        <a href="#" id="list-a">DR社区</a>
+                        <div class="nav-hid">
+                            <div class="nav-hid-left">
+                                <img src="../images/1476269011.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">你想写今年的时光信吗？</a>
+                            </div>
+                            <div class="nav-hid-right">
+                                <img src="../images/1478154216.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">喜欢就要放肆,爱就不要控制</a>
+                            </div>
+                        </div>
+                    </li>       
+                </ul>
+            </div>
+        </nav>
+    </div>
+	<div class="qh-title">		
+		<div class="qh-title-left">
+			<a href="index.html">Darry Ring</a>
+			<span> &gt; 品牌文化</span>
+		</div>
+	</div>
+    <div class="dr-main">
+        <div class="drshop-center">
+            <div class="drshop-bg">
+                <img src="../images/icon_dr.png" alt="">
+            </div>
+            <div class="lunbo-box">
+                <div class="lunbo-left">
+                    <h4>一生仅能定制一枚</h4>
+                    <p>早于上个世纪90年代，戴瑞珠宝便在香港开始从事裸钻高级定制,以寻求、欣赏珍宝的眼光，苛刻的甄选标准，搜集来自世界各地的珍稀钻石。 这些卓越品质的钻石戴瑞珠宝只提供给少数专属的顶尖珠宝商,让钻石在不同珠宝艺术大师演绎绝美工艺创作。</p>
+                    <p>在Darry Ring，这里有着世间最独特的规定，每位男士凭身份证一生仅能定制一枚唯一的戒指，赠予此生唯一挚爱的女子，以示“一生只爱你一人”的至高承诺。</p>
+                    <p>此生真爱 仅此一枚……</p>
+                </div>
+                <div class="lunbo">
+                    <ul class="lunboul" id="uls">
+                        <li style="z-index:100"><a href="qhring.html"><img src="../images/banner1.jpg" alt="" ></a></li>
+                        <li style="z-index:90" ><a href="qhring.html"><img src="../images/banner2.jpg" alt="" ></a></li>
+                    </ul>
+                </div>
+                <div class="sankuai">
+                    <div class="culture1">
+                        <a href="#"></a>
+                        <h3>一生仅能定制一枚求婚钻戒</h3>
+                        <div class="culture-line"></div>
+                        <p>每位男士凭身份证一生仅能定制一枚唯一的戒指，<br>赠予此生唯一挚爱的女子；只有购买过DR求婚钻戒后,<br>
+                            才能购买对戒和其它钻石饰品.</p>
+                    </div>
+                    <div class="culture2">
+                        <a href="#"></a>
+                        <h3>真爱验证   一生·唯一·真爱</h3>
+                        <div class="culture-line-white"></div>
+                        <p>只有经过官网查询验证该姓名没有与之绑定<br>
+                            的钻戒编码，才可以进行购买.</p>
+                    </div>
+                    <div class="culture3">
+                        <a href="#"></a>
+                        <h3>见证真爱   分享幸福时光</h3>
+                        <div class="culture-line"></div>
+                        <p>记录点滴甜蜜爱情，<br>
+                            Darry Ring为每对恋人打造浪漫的专属空间。</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="wukuai">
+                <li class="team">
+                    <a href="#"></a>
+                        <h3>顶尖珠宝设计团队</h3>
+                        <div class="wukuai-line"></div>
+                        <p>每一款Darry Ring都倾诉着<br>
+                            “一生一世，一心一意”的<br>
+                            爱情观念，让更多相爱的人<br>
+                            体验到爱的文化，爱的见<br>
+                            证，是真爱幸福的标志！</p>
+                </li>
+                <li class="gongyi">
+                    <a href="#"></a>
+                        <h3>卓越品质工艺</h3>
+                        <div class="wukuai-line"></div>
+                        <p>每1000颗钻石中仅有1枚得以被<br>
+                            选中，成为女孩子梦寐以求的<br>
+                            Darry Ring。</p>
+                </li>
+                <li class="zhuiqiu">
+                    <a href="#"></a>
+                        <h3>至臻完美的品质追求</h3>
+                        <div class="wukuai-line-white"></div>
+                        <p>早于上个世纪90年代，<br>
+                            戴瑞珠宝便在香港开始从事裸钻<br>
+                            批发的高级定制业务。</p>
+                        <p>以苛求、欣赏珍宝的眼光，<br>
+                            苛刻的甄选标准，<br>
+                            搜集来自世界各地的珍稀钻石。</p>
+                        <p class="zhuiqiu-special">这些卓越品质的钻石<br>
+                            戴瑞珠宝只提供给少数<br>
+                            专属的顶尖珠宝商,<br>
+                            让钻石在不同珠宝艺术大师<br>
+                            演绎绝美工艺创作。<br>
+                </p>
+                </li>
+                <li class="biaozhun">
+                    <a href="#"></a>
+                        <h3>顶级钻石4C标准</h3>
+                        <div class="wukuai-line"></div>
+                        <p>Darry Ring遵循严谨的钻石<br>
+                            评定准则远高于简单的<br>
+                            “4C” 标准,更制定出Darry<br>
+                            Ring专属的严谨规格及最高<br>
+                            的考量机制，为每对恋人打<br>
+                            造稀世珍宝。</p>
+                </li>
+                <li class="renzheng">
+                    <a href="#"></a>
+                        <h3>国际权威认证</h3>
+                        <div class="wukuai-line"></div>
+                        <p>经过国际权威的独立钻石<br>
+                            认证机构——GIA（美国宝<br>
+                            石学院）认证。</p>
+                        <p class="renzheng-special">GIA证书中记录根据<br>
+                            “4C”标准对钻石所作的<br>
+                            等级评估，与之对应的编码<br>
+                            均可通过权威机构查询验<br>
+                            证，确保您的消费权益。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top"></div> 
+        <div class="service">
+            <ul>
+                <li><a href="#"><i class="icon1"></i>权威认证</a></li>
+                <li><a href="#"><i class="icon2"></i>一钻双证</a></li>
+                <li><a href="#"><i class="icon3"></i>终身保养</a></li>
+                <li><a href="#"><i class="icon4"></i>以小换大</a></li>
+                <li><a href="#"><i class="icon5"></i>15天退换</a></li>
+                <li><a href="#"><i class="icon6"></i>全国免运费</a></li>
+                <li><a href="#"><i class="icon7"></i>全程保险</a></li>
+            </ul>
+        </div>
+        <div class="footer-gray">
+            <ul id="ul-gray">
+                <li><a href="#">关注我们</a></li>
+                <li><a href="#">真爱查询</a></li>
+                <li><a href="#">实体店免费预约</a></li>
+                <li><a href="#">在线客服</a></li>
+                <li id="rexian">24小时全国免费服务热线<img src="../images/tel.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="footer-black">
+            <div class="footer-black-c">
+                <div class="footer-black-top">
+                    <div class="fbtdiv fbtdiv-1">
+                        <ul>
+                            <li><b>关于我们</b></li>
+                            <li>权威认证</li>
+                            <li>合作专区</li>
+                            <li>加入我们</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>购物指南</b></li>
+                            <li>购买流程</li>
+                            <li>支付方式</li>
+                            <li>配送流程</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>售后服务</b></li>
+                            <li>退货流程</li>
+                            <li>办理售后</li>
+                            <li>15天退换</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>帮助中心</b></li>
+                            <li>注册流程</li>
+                            <li>联系客服</li>
+                            <li>网站地图</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>服务条款</b></li>
+                            <li>终生保养</li>
+                            <li>注册协议</li>
+                            <li>隐私声明</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>DR资讯</b></li>
+                            <li>钻石百科</li>
+                            <li>产品百科</li>
+                            <li>求婚指南</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-black-jia"></div>
+                <div class="footer-black-mid">
+                    <p>Copyright  © 2006-2015 www.darryring.com 戴瑞珠宝 All Rights Reserved. 粤ICP备11012085号-2</p>
+                    <p>ICP经营许可证粤B2-20140279 | 中国互联网违法信息举报中心 | 中国公安网络110报警服务 | 本网站提供所售商品的正式发票</p>
+                </div>
+                <div class="footer-black-jia"></div>
+                <div class="footer-black-langues">
+	                <a href="#">中文简体/</a>
+	                <a href="#">English</a>
+            	</div>
+            	<div class="friend">
+            		<p>友情链接：<a href="#">戴瑞珠宝官网</a>
+	            		<a href="#">求婚词</a>
+	            		<a href="#">钻石戒指</a>
+	            		<a href="#">魅网女性网</a>
+	            		<a href="#">拍鞋网</a>
+	            		<a href="#">饰品品牌</a>
+	            		<a href="#">化妆品库</a>
+	            		<a href="#">南京房产网</a>
+	            		<a href="#">娱乐新闻</a>
+	            		<a href="#">建材商城</a>
+	            		<a href="#">手表品牌排行</a>
+	            		<a href="#">识货</a>
+	            		<a href="#">梦芭莎时尚网</a>
+            		</p>
+            		<p>
+            			<a href="#">发型设计</a>
+	            		<a href="#">白领</a>
+	            		<a href="#">眼镜店</a>
+	            		<a href="#">婚纱摄影</a>
+	            		<a href="#">播视网视频</a>
+	            		<a href="#">发型</a>
+	            		<a href="#">中国女装网</a>
+	            		<a href="#">快递查询</a>
+	            		<a href="#">火车票查询</a>
+	            		<a href="#">伊宅购村安商城</a>
+	            		<a href="#">珂兰钻石</a>
+	            		<a href="#">海外房产</a>
+	            		<a href="#">白酒招商</a>
+	            		<a href="#">爱藏网</a>
+	            		<a href="#">新浪当代艺术</a>
+            		</p>
+            		<p>
+            			<a href="#">淘翠网</a>
+	            		<a href="#">重庆房产</a>
+	            		<a href="#">天气预报查询</a>
+	            		<a href="#">海淘</a>
+	            		<a href="#">258</a>
+	            		<a href="#">大学院校库</a>
+	            		<a href="#">佐卡伊钻戒</a>
+	            		<a href="#">南湖国旅</a>
+	            		<a href="#">化妆品招商</a>
+	            		<a href="#">笔趣阁txt下载</a>
+	            		<a href="#">女性健康</a>
+	            		<a href="#">钻戒</a>
+	            		<a href="#">礼物</a>
+	            		<a href="#">手表品牌大全</a>
+	            		<a href="#">钻戒</a>
+	            		<a href="#">婚嫁网</a>
+            		</p>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏 -->
+    <div class="dr_quickservice" id="dr-quickservice" style="">
+        <!--在线客服-->
+        <div class="droline_kf droline_showkf">
+            <div class="droline_kfword">
+                <span></span>
+                <p style="width: 220px; height: 60px;">想了解更多钻石知识<br>我们有专业在线客服给您解答</p>
+            </div>
+            <img src="../images/zxkf.gif">
+            <span id="span_kf">在线<br>
+                客服
+            </span>
+            <em class="droline_yleft"></em>
+            <em class="droline_yright"></em>
+        </div>
+        <!--在线客服end-->
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="shop-cart.html" target="_blank" class="dr_quick2"></a>
+            <div class="dr_quick-word em3">
+                购物车
+            </div>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="shop-cart.html" target="_blank" class="dr_quick3"></a>
+            <div class="dr_quick-word myindent">
+                我的订单
+            </div>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="/member/myfavorites.html" class="dr_quick4"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="javascript:join_favorite();" class="dr_quick5"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a href="javascript:;" class="dr_quick6"></a>
+        </div>
+        <div class="dr_quick-cort" style="display: block">
+            <a href="#" class="dr_quick7"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a href="#backtop" class="dr_totop"></a>
+            <div class="dr_quick-word totop">
+                返回顶部
+            </div>
+        </div>
+    </div>
+</body>
+</html>

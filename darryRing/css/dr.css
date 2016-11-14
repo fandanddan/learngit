@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 微软雅黑;
+}
+
+
+.index-nav{
+	width: 100%;
+	height: 168px;
+	min-width: 1000px;
+	margin: 20px auto 0px;
+}
+.index-nav-center{
+	height: 168px;
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.index-nav-center1{
+	float: left;
+	width: 40%;
+	height: 168px;
+	background: url('../images/drlogo.png') no-repeat 17px center;
+}
+.index-nav-center2{
+	float: right;
+	width: 60%;
+	height: 168px;
+}
+.index-nav-center2-top{
+	height: 80px;
+}
+.index-nav-center2-top li{
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	width: 95px;
+	color: #8d8d8d;
+}
+.index-nav-center2-top #right{
+	float: right;
+}
+.index-nav-center2 li a{
+	color: #8d8d8d;
+}
+.index-nav-center2 li img{
+	position: relative;
+	top: 4px;
+}
+.index-nav-center2-top #pink{
+	display: block;
+	background-color: #d9b39b;
+}
+
+
+.index-nav-center2-bottom{
+	height: 73px;
+	background: url('../images/drz.png') no-repeat top right;
+}
+.index-nav-center2-bottom .chaxun{
+	float: right;
+	margin-top: 40px;
+}
+.index-nav-center2-bottom .chaxun span{
+	color: #606060;
+	font-size: 12px;
+}
+.index-nav-center2-bottom .chaxun input{
+	width: 198px;
+	height: 24px;
+	border: 1px solid #d7d7d7;
+	color: #a9a9a9;
+	text-align: center;
+	font-size: 12px;
+}
+.index-nav-center2-bottom .chaxun a{
+	display: inline-block;
+	width: 73px;
+	height: 22px;
+	background-color: #eeeeee;
+	color: #626262;
+	border: 1px solid #666666;
+	font-size: 12px;
+	text-align: center;
+	line-height: 22px;
+}
+
+
+.index-nav2{
+	width: 100%;
+	height: 60px;
+	min-width: 1000px;
+	margin: 20px auto 0px;
+	background: url('../images/bg.png') repeat-x;
+}
+.index-nav2-center{
+	height: 60px;
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.index-nav2-center ul>li{
+	float: left;
+	text-align: center;
+	line-height: 55px;
+	width: 14%;
+	color: #8d8d8d;
+}
+.index-nav2-center ul li .nav2-ul{
+	font-size: 15px;
+	color: #fff6dd;
+}
+.index-nav2-center .dr{
+	display: none;
+	width: 1000px;
+	height: 210px;
+	position: absolute;
+	padding-top: 100px;
+}
+.index-nav2-center .dr .dr1{
+	float: left;
+	width: 49.5%;
+	height: 210px;
+}
+.index-nav2-center .dr .dr2{
+	float: left;
+	width: 1%;
+	height: 210px;
+	background: url('../images/drx.png') no-repeat center;
+}
+.index-nav2-center .dr .dr3{
+	float: left;
+	width: 49.5%;
+	height: 210px;
+}
+.index-nav2-center .dr .dr1 #photo{	
+	width: 198px;
+	height: 130px;
+	margin: 0 auto;
+	display: block;
+}
+.index-nav2-center .dr .dr1 #name{	
+	width: 95px;
+	height: 29px;
+	margin: 0 auto;
+	color: #696969;
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	line-height: 29px;
+}
+#name img {
+    position: relative;
+    top: 9px;
+    left: 8px;
+}
+.index-nav2-center .dr .dr3 #photo{	
+	width: 290px;
+	height: 160px;
+	margin: 0 auto;
+}
+.index-nav2-center .dr .dr3 #name{	
+	width: 70px;
+	height: 22px;
+	margin: 0 auto;
+	color: #696969;
+	font-size: 14px;
+}
+.index-nav2-center .dr .dr3 a{
+	display: block;
+}
+.index-nav2-center li:hover .dr{
+	display: block;	
+}
+.index-nav2-center .dr:hover{
+	display: block;
+}
+
+
+
+
+
+.index-nav2-center .propose{
+	/*display: none;*/
+	width: 1000px;
+	height: 210px;
+	position: absolute;
+	left: 200px;
+	padding-top: 100px;
+}
+.index-nav2-center .propose .propose1{
+	float: left;
+	width: 47%;
+	height: 210px;
+	background: url('../images/prepose1.png') no-repeat left center;
+}
+.index-nav2-center .propose .propose1 .series{
+	float: right;
+}
+.index-nav2-center .propose .propose1 .series ul li{
+	height: 30px;
+	line-height: 30px;
+}
+.index-nav2-center .propose .propose1 .series ul li a{
+	color: #000;
+}
+.index-nav2-center .propose .propose2{
+	float: left;
+	width: 6%;
+	height: 210px;
+	background: url('../images/drx.png') no-repeat center;
+}
+.index-nav2-center .propose .propose3{
+	float: left;
+	width: 47%;
+	height: 210px;
+}

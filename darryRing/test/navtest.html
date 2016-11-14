@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情</title>
+    <link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/qhzj.css">
+	<link rel="stylesheet" href="../css/xiangqing.css">
+    <script src="../js/jquery.js"></script>      
+    <script src="../js/tuchu.js"></script>       
+    <script src="../js/index.js"></script>       
+    <script src="../js/fangdajing.js"></script>    
+    <script>
+        //求婚钻戒
+        //左边的ul li 
+        $(function(){
+            $(".qh-hid-left .qh-img").eq(0).addClass('disblock');
+            $(".qh-hid-left ul li").mouseover(function() {
+                $(".qh-hid-left .disblock").removeClass("disblock");
+                $(".qh-hid-left .qh-img").eq($(this).index()).addClass("disblock");
+            }) 
+        })
+        //右边的ul li 
+        $(function(){
+            $(".qh-hid-right .qh-img").eq(0).addClass('disblock');
+            $(".qh-hid-right ul li").mouseover(function() {
+                $(".qh-hid-right .disblock").removeClass("disblock");
+                $(".qh-hid-right .qh-img").eq($(this).index()).addClass("disblock");
+            }) 
+        })
+
+        //爱的礼物
+        //左边的ul li 
+        $(function(){
+            $(".love-hid-left .love-img").eq(0).addClass('disblock');
+            $(".love-hid-left ul li").mouseover(function() {
+                $(".love-hid-left .disblock").removeClass("disblock");
+                $(".love-hid-left .love-img").eq($(this).index()).addClass("disblock");
+            }) 
+        })
+        //右边的ul li 
+        $(function(){
+            $(".love-hid-right .love-img").eq(0).addClass('disblock');
+            $(".love-hid-right ul li").mouseover(function() {
+                $(".love-hid-right .disblock").removeClass("disblock");
+                $(".love-hid-right .love-img").eq($(this).index()).addClass("disblock");
+            }) 
+        })
+    </script>   
+</head>
+<body>
+	<div class="index-nav" id="backtop">
+        <div class="index-nav-center">
+            <div class="index-nav-center1"><a href="index.html"></a></div>
+            <div class="index-nav-center2">
+                <div class="index-nav-center2-top">
+                    <ul>
+                         <li><a href="login.html" style="width: 88px;overflow: hidden;margin-right: 10px;margin-left: -23px;"><span class="userlogin">登录</span></a></li>
+                        <li><a href="sign.html" id="pink">加入DR族</a></li>
+                        <li><a><img src="../images/phone.png">400 01 13520</a></li>
+                        <li class="app">
+                            <a><img src="../images/iphone.png">DR族APP</a>
+                            <div class="app-hid">
+                                <img src="../images/APP_ewm.jpg" alt="">
+                                <p>下载暖心的情侣互动APP</p>
+                                <p>DR族专属</p>
+                            </div>
+                        </li>
+                        <li class="lang">
+                            <a href="#">中文（简体）</a>
+                            <i id="jiantou1"></i>
+                            <div class="lang-hid">
+                                <a href="#">中文（繁体）</a>
+                                <a href="">English</a>
+                            </div>                  
+                        </li>
+                        <li id="right">
+                            <a href="#">所在城市店铺：</a>
+                            <div id="shop-hid">
+                                <a href="#">香港</a>
+                                <a href="#">上海</a>
+                                <a href="#">北京</a>
+                                <a href="#">深圳</a>
+                                <a href="#">广州</a>
+                                <a href="#">南京</a>
+                                <a href="#">成都</a>
+                                <a href="#">天津</a>
+                                <a href="#">昆明</a>
+                                <a href="#">宁波</a>
+                                <a href="#">大连</a>
+                                <a href="#">长沙</a>
+                                <a href="#">重庆</a>
+                                <a href="#">武汉</a>
+                                <a href="#">郑州</a>
+                                <a href="#">杭州</a>
+                                <a href="#">苏州</a>
+                                <a href="#">无锡</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="index-nav-center2-bottom">
+                    <div class="chaxun">
+                        <span><i id="jiantou"></i>中国大陆</span>
+                        <div id="chaxun-hid">
+                            <a href="#">海外地区</a>
+                            <a href="">港澳台</a>
+                            <a href="">其他</a>
+                        </div>
+                        <input type="text" value="请输入身份证号验证真爱承诺">
+                        <a href="#">DR真爱查询</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <nav class="index-nav2">
+            <div class="index-nav-center">
+                <ul class="list">  <!-- list -->
+                    <!-- DR -->
+                    <li>
+                        <a href="index.html" id="list-a">DR</a>
+                        <!-- ul(nav) slide
+                                li(aaa) -->
+                            <div class="nav-hid">
+                                <div class="nav-hid-left">
+                                    <img src="../images/drword.png" alt="">
+                                    <a href="sign.html" class="hid-join">加入DR族</a>
+                                </div>
+                                <div class="nav-hid-right">
+                                    <img src="../images/drimg.jpg" alt="">
+                                    <a href="" id="hid-chaxun">真爱查询</a>
+                                </div>
+                            </div>
+                    </li>
+                    <!-- 求婚钻戒 -->
+                    <li>
+                        <a href="qhring.html" class="nav2-ul" id="list-a">求婚钻戒</a>
+                        <div class="nav-hid">
+                            <div class="qh-hid-left fl">
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2014092610543039082c76fd.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2015081318151576e08c7f5c.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/201409031259093e45b5ecf0.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/20150930190558ba3bac51e0.jpg" alt="">
+                                </div>
+                                <div class="qh-img fl disnone">
+                                    <img src="../images/2015093019140361614ead1d.jpg" alt="">
+                                </div>
+                                <ul class="fr">
+                                    <li><a href="qhring.html">稀世粉钻</a></li>
+                                    <li><a href="qhring.html">Love Line系列</a></li>
+                                    <li><a href="qhring.html">Forever系列</a></li>
+                                    <li><a href="qhring.html">My Heart系列</a></li>
+                                    <li><a href="qhring.html">True Love系列</a></li>
+                                </ul>
+                            </div>
+                            <div class="qh-hid-right fr">
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20140902094335966c32bf74.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20141208151441cc5ac80d54.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/201409011559313d34c1c807.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/20150129114316f8a2465758.jpg" alt="">
+                                </div>
+                                <div class="qh-img fr disnone">
+                                    <img src="../images/201502061050359c37df606b.jpg" alt="">
+                                </div>
+                                <ul class="fl">
+                                    <li><a href="qhring.html">I Swear系列</a></li>
+                                    <li><a href="qhring.html">Just You系列</a></li>
+                                    <li><a href="qhring.html">Princess系列</a></li>
+                                    <li><a href="qhring.html">Believe系列</a></li>
+                                    <li><a href="qhring.html">查看全部商品</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 爱的礼物 -->
+                    <li>
+                        <a href="love.html" id="list-a">爱的礼物</a>
+                        <div class="nav-hid">
+                            <div class="love-hid-left fl">
+                                <div class="love-img fl disnone">
+                                    <img src="../images/2015012912125452b30a7236.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/20150714152021089c7e0a27.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/20141211170306c60c5d8029.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/2015092819013563a1e7c5d7.jpg" alt="">
+                                </div>
+                                <div class="love-img fl disnone">
+                                    <img src="../images/ZHDARRYJEWELRYF15002_1.jpg" alt="">
+                                </div>
+                                <ul class="fr">
+                                    <li><a href="qhring.html">对戒</a></li>
+                                    <li><a href="qhring.html">男戒</a></li>
+                                    <li><a href="qhring.html">吊坠</a></li>
+                                    <li><a href="qhring.html">耳饰</a></li>
+                                    <li><a href="qhring.html">手链/手镯</a></li>
+                                </ul>
+                            </div>
+                            <div class="love-hid-right fr">
+                                <div class="love-img fr disnone">
+                                    <img src="../images/2016060811463267ab8fc9ed.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150928185451092acd12d8.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150930142250b083bc9f9f.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/ZHDARRYJEWELRYF15008_1.jpg" alt="">
+                                </div>
+                                <div class="love-img fr disnone">
+                                    <img src="../images/20150129121254e8cdb1d2f7.jpg" alt="">
+                                </div>
+                                <ul class="fl">
+                                    <li><a href="qhring.html">十二星座吊坠</a></li>
+                                    <li><a href="qhring.html">纪念日礼物</a></li>
+                                    <li><a href="qhring.html">生日礼物</a></li>
+                                    <li><a href="qhring.html">节日礼物</a></li>
+                                    <li><a href="qhring.html">查看全部商品</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 钻戒定制 -->
+                    <li>
+                        <a href="dingzhi.html" id="list-a">钻戒定制</a>
+                    </li>
+                    <!-- DR实体店 -->
+                    <li>
+                        <a href="drshop.html" id="list-a">DR实体店</a>
+                        <div class="nav-hid">
+                                <div class="nav-hid-left">
+                                    <img src="../images/20151207145102.jpg" alt="">
+                                    <a href="sign.html" id="hid-chaxun">香港店</a>
+                                </div>
+                                <div class="nav-hid-right">
+                                    <img src="../images/201602251354138161e6e6fe.jpg" alt="">
+                                    <a href="sign.html" id="hid-chaxun">重庆观音桥店</a>
+                                </div>
+                            </div>
+                    </li>
+                    <!-- DR品牌文化 -->
+                    <li>
+                        <a href="#" id="list-a">DR品牌文化</a>
+                        <div class="nav-hid">
+                            <div class="nav-hid-left">
+                                <img src="../images/navleft1.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">品牌文化</a>
+                            </div>
+                            <div class="nav-hid-right">
+                                <img src="../images/navright1.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">明星推荐</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- DR社区 -->
+                    <li>
+                        <a href="#" id="list-a">DR社区</a>
+                        <div class="nav-hid">
+                            <div class="nav-hid-left">
+                                <img src="../images/1476269011.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">你想写今年的时光信吗？</a>
+                            </div>
+                            <div class="nav-hid-right">
+                                <img src="../images/1478154216.jpg" alt="">
+                                <a href="sign.html" id="hid-chaxun">喜欢就要放肆,爱就不要控制</a>
+                            </div>
+                        </div>
+                    </li>       
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

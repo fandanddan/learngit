@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 微软雅黑;
+    box-sizing:border-box;
+    outline: none;
+    
+}
+.love-line-center,.believe-center,.forever-just-center,.myheart-center{
+	position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+.love-line{
+	clear: both;
+	width: 100%;
+	height: 605px;
+	background: url(../images/201511111545169270c695c8.jpg) no-repeat center center;
+	-webkit-background-size: auto;
+	background-size: auto;
+}
+.love-line-new{
+	position: absolute;
+    top: 104px;
+    left: 134px;
+}
+.love-line-hap{
+	position: absolute;
+    top: 32px;
+    right: 124px;
+}
+.love-line-more{
+	position: absolute;
+    top: 126px;
+    right: 190px;
+}
+.love-line-ring{
+	position: absolute;
+    top: 250px;
+    right: 278px;
+}
+
+.believe{
+	clear: both;
+	width: 100%;
+	height: 475px;
+	background: url(../images/201511111137241b849a05b0.jpg) no-repeat center center;
+	-webkit-background-size: auto;
+	background-size: auto;
+}
+.believe-ring{
+	position: absolute;
+    top: 112px;
+    left: 76px;
+}
+.believe-hot{
+	position: absolute;
+    top: 80px;
+    left: 350px;
+}
+.believe-ring2{
+	position: absolute;
+    top: 120px;
+    right: -18px;
+}
+.believe-ibelieve{
+	position: absolute;
+    top: 290px;
+    right: 212px;
+}
+.believe-more{
+	position: absolute;
+    top: 364px;
+    right: 246px;
+}
+.forever-just{
+	clear: both;
+	width: 100%;
+	height: 475px;
+	background: url(../images/201511111138590526be0d8d.jpg) no-repeat center center;
+	-webkit-background-size: auto;
+	background-size: auto;
+}
+.forever-ring{
+	position: absolute;
+    top: 52px;
+    left: 4px;
+}
+.forever-hand{
+	position: absolute;
+    top: 315px;
+    left: 315px;
+}
+.forever-more{
+	position: absolute;
+    top: 385px;
+    left: 286px;
+}
+.just-ring{
+	position: absolute;
+    top: 42px;
+    right: 40px;
+}
+.just-you{
+	position: absolute;
+    top: 318px;
+    right: 50px;
+}
+.just-more{
+	position: absolute;
+    top: 384px;
+    right: 4px;
+}
+
+.myheart{
+	clear: both;
+	width: 100%;
+	height: 475px;
+	background: url(../images/201511111140227f89fdcb0c.jpg) no-repeat center center;
+	-webkit-background-size: auto;
+	background-size: auto;
+}
+.myheart-ring{
+	position: absolute;
+    top: 102px;
+    left: 58px;
+}
+.myheart-ring2{
+	position: absolute;
+    top: 113px;
+    right: 114px;
+}
+.myheart-word{
+	position: absolute;
+    top: 266px;
+    right: 58px;
+}
+.myheart-more{
+	position: absolute;
+    top: 336px;
+    right: 14px;
+}
+.dingzhi{
+	width: 100%;
+	background-color: #f6efef;
+	padding: 60px 0;
+}
+.dingzhi-center{
+	width: 1000px;
+	margin: 0 auto;
+}
+.hotring{
+	padding-top: 80px;
+}
+.hotring-bg {
+    background: url(../images/sbg1.jpg) repeat-x;
+    height: 69px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.hotring-bg img {
+    position: absolute;
+    left: -28px;
+    top: -36px;
+}
+.hotring-ring {
+    overflow: hidden;
+    margin-left: -21px;
+    margin-top: 20px;
+}
+.hotring-ring li {
+	width: 235px;
+	position: relative;
+    background: #fff;
+    float: left;
+    height: 330px;
+    margin-left: 20px;
+}
+.hotring-ring li a {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.hotring-ring li a img{
+	vertical-align: middle;
+	width: 100%;
+}
+.hotring-ring-word {
+	z-index: 5;
+    text-align: center;
+    font-family: "SimSun";
+    font-size: 12px;
+    color: #888;
+    line-height: 22px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 24px;
+}
+.hotring-ring-word i {
+    display: inline-block;
+    border-top: 1px solid #888;
+    width: 10px;
+    height: 1px;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+.hotring-ring-word span {
+    font-weight: bold;
+}
+.hotring-ring-word p em{
+	font-style: normal;
+	color: #bebdbd;
+}

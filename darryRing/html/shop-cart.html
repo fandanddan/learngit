@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../css/shop-cart.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../js/shop-cart.js"></script>
+	<script src="../js/cart.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/jsAddress.js"></script>  
+    <script>
+        $(function(){
+            var userlogin = getCookie("name");
+            var userloginE = getCookie("nameE");
+            if(userlogin != ""){
+                $(".userlogin").text(userlogin);
+            }else if(userloginE != ""){
+                $(".userlogin").text(userloginE);
+            }else{
+            }           
+        })
+    </script>
+</head>
+<body>
+	<div class="shop-cart-center">
+		<div class="shop-cart-top">
+			<div class="shop-cart-top-fl">
+				<a href="index.html"><img src="../images/dr.png" alt=""></a>
+			</div>
+			<div class="shop-cart-top-fr">
+				<a href="login.html"><span class="userlogin" style="cursor:pointer;"></span></a>
+				<a href="#">我的DR</a>
+				<a href="#" id="tuichu">退出</a>
+				<a href="#" class="help">帮助中心</a>
+			</div>
+		</div>
+		<!-- 购物车 -->
+		<form action="" class="form-block" style="diaplay:none;">
+			<div class="shop-cart-nav"></div>
+			<div class="shop-cart-main">
+				<div class="shop-cart-main-fl">
+					<h3>查看我的购物车</h3>
+	                <!--购物车-->
+	                <table border="0" cellspacing="0" cellpadding="0" class="shop_tabble">
+	                    <tbody>
+	                    	<tr class="nav_tr">
+		                        <td class="sp_td" style="width:240px">商品</td>
+		                        <td class="cz_td" style="width:100px">材质</td>
+		                        <td class="sc_td" style="width:100px">手寸/尺寸</td>
+		                        <td class="kz_td" style="width:100px">刻字</td>
+		                        <td class="gm_td">购买价</td>
+		                    </tr>  
+			            </tbody>
+			        </table>
+	                <!--购物车end-->
+	                <div class="shop-js">
+	                	<a href="qhring.html" class="jx-shop">继续购物</a>
+	                    <a href="#" class="qk-shop" style="cursor: pointer;">清空购物车</a>
+	                    <span>你购买了<i id="shop-num"></i>件商品</span>
+	             
+	                    <span>总计：<i class="fw-bold" style="font-family:微软雅黑"></i></span>
+	                    <span class="end-bt"><em>立即结算</em></span>
+	                </div>               
+				</div>
+				<div class="shop-cort-right fr">
+	            	<div class="shop-right-nr">
+	                	<h3>购物帮助指南</h3>
+	                    <div class="shop-right-zx line-bottom">
+	                    	<p class="shop-lx">24小时在线客服</p>
+	                        <p class="shop-tel">400-01-13520</p>
+	                    </div>
+	                    <div class="shop-right-zf line-bottom">
+	                    	<h4>支付安全保障</h4>
+	                        <p>安全支付系统采用SSL加密。</p>
+	                        <ul class="shop-right-ul">
+	                        	<li class="shop-cor-yl"></li>
+	                            <li class="shop-cor-cft"></li>
+	                            <li class="shop-cor-zf"></li>
+	                        </ul>
+	                    </div>
+	                    <div class="shop-right-ps">
+	                    	<h4>全球配送</h4>
+	                    	<p class="shop-kd">支持全球配送,店铺取货</p>
+	                        <p class="shop-bj">全程保价 无风险</p>
+	                    </div>
+	                </div>
+            	</div>
+			</div>
+		</form>
+		<!-- 真爱协议 -->
+		<div class="agreement form-block" style="diaplay:none;">
+			<div class="agreement-nav"></div>
+			<div class="agreement-top"></div>
+			<div class="agreement-main">
+				<div class="agreement-main-title">
+					<i></i><span>真爱协议</span><i></i>
+				</div>
+				<div class="agreement-main-body">
+					<p>Darry  Ring 真爱戒指男士凭身份证号一生仅可购买一枚，作为一生唯一真爱的最高承诺。</p>
+                    <p>签署该协议则表示您已经过慎重考虑，</p>
+                    <p>决定自购买之日起，将您的身份证号与Darry  Ring 编码绑定，并接受亲友对购买信息的验证查询。</p>
+                    <p>此购买信息将终身留存在Darry  Ring 数据库中并无法更改。请用心呵护您的真爱。</p>
+				</div>
+				<div class="agreement-main-input">
+                	<label><i>*</i> 先生姓名:</label>
+                    <input type="text" class="it_1" name="sirName" id="sirName" readonly="readonly" value="">
+                    <label><i>*</i>女士姓名:</label>
+                    <input type="text" class="it_1" name="ladyName" id="ladyName" value="">
+                    <label><i>*</i>先生身份证号:</label>
+                    <input type="text" class="it_2" name="sirCode" id="sirCode" readonly="readonly" value="">
+                </div>
+                <div class="agreement-main-tips">
+                	<p>温馨提示：当您填写此资料,即默认同意本公司相关资料制作的网页放在Darry Ring专属页面。此资料将做合同永久保留。</p>
+                </div>
+                <div class="agreement-main-tips2">
+                	<p>女生会很在乎您记得这些重要的日子。不一定要送礼，一句问候或是一份惊喜都能给爱情加分。</p>
+                	<p>如果有重要的节日让Darry Ring帮您提醒。</p>
+                </div>
+                <div class="agreement-main-input agreement-main-spinput">
+                	<label>她的生日：</label>
+                    <input type="text" class="it_3" id="sheBirthday" name="sheBirthday" onfocus="WdatePicker({})" readonly="readonly">
+                    <label>纪念日一：</label>
+                    <input type="text" class="it_3" id="sheDate1" name="sheDate1" onfocus="WdatePicker({})" readonly="readonly">
+                    <label>纪念日二:</label>
+                    <input type="text" class="it_3" id="sheDate2" name="sheDate2" onfocus="WdatePicker({})" readonly="readonly">
+                </div>
+                <div class="agreement-main-check">
+                	<input id="cbAgree" type="checkbox" name="ck">
+                    <label for="cbAgree">
+                    	<a>我已经仔细阅读并接受该协议</a>
+                    </label>
+                </div>
+                <div class="agreement-main-button" onclick="">
+                	<div class="bt1 agreement-bt1"><span>确认提交真爱协议</span></div>
+                </div>
+			</div>			
+			<div class="agreement-bottom"></div>
+		</div>
+		<!-- 填写订单 -->
+		<div class="write-indent form-block" style="diaplay:none;">
+			<div class="write-indent-nav"></div>
+			<div class="shop-cart-main">
+				<div class="shop-cart-main-fl">
+					<h3 style="margin-top:5px">收货人信息<p></p></h3>
+					<div class="shop-cart-adr">
+						<div class="shop-adress-top">
+		                    <input type="radio" name="adress" id="addressNew">
+		                    <label for="addressNew" class="adress_color">添加新地址</label>
+		                </div>
+		                <div class="shop-adress-add form-block">
+		                    <h4>添加新地址</h4>
+		                    <div class="shop-adress-Toadd">
+		                        <label><i>*</i>收 货 人：</label>
+		                        <input id="addressName" type="text" placeholder="请准确填写真实姓名" class="true-name">
+		                    </div>
+                    		<div class="shop-adress-Toadd" style=" ">
+                        		<label><i>*</i>所在地区：</label>
+                        		地区：<select id="area"></select> 
+                        		省：<select id="cmbProvince"></select>  
+								市：<select id="cmbCity"></select>  
+								区：<select id="cmbArea"></select>  
+                    		</div>
+                    		<script type="text/javascript">  
+    							addressInit('area','cmbProvince','cmbCity','cmbArea','西北地区', '北京', '市辖区', '东城区');  
+    							//addressInit('Select1', 'Select2', 'Select3');  
+							</script>
+		                    <div class="shop-adress-Toadd">
+		                        <label><i>*</i>详细地址：</label>
+		                        <input id="street" type="text" class="adt1" placeholder="请填写详细路名及门牌号">
+		                    </div>
+		                    <div class="shop-adress-Toadd">
+		                        <label><i>*</i>邮政编码：</label>
+		                        <input id="postcode" type="text" placeholder="请输入邮编" class="true_number">
+		                    </div>
+		                    <div class="shop-adress-Toadd" style="">
+		                        <label><i>*</i>手机号码：</label>
+		                        <input id="mobile" type="text">
+		                        <span class="oth-color">或</span>
+		                        <span>固定电话：</span>
+		                        <input id="telephone" type="text">
+		                    </div>
+		                    <div class="shop-adress-Toadd">
+		                        <label><i>*</i>购买人手机：</label>
+		                        <input id="smsmobile" type="text" placeholder="物流短信接收手机号" class="true-number">
+		                    </div>
+		                    <div class="shop-adress-sp">
+		                        <input type="checkbox" id="cbDefaultAddress">
+		                        <label for="cbDefaultAddress">设为默认地址</label>
+		                    </div>
+		                    <div class="shop-adress-save">
+		                        <div class="bt1">
+		                        	<span class="save">保存收货人信息</span>
+		                        </div>
+		                    </div>
+                		</div>
+                		<div class="shop-adress-qr">
+		                    <div class="shop-adressqr-top">
+		                        <a href="Cart.aspx" class="fr">返回修改购物车&gt;&gt;</a>
+		                        <span>确认订单信息</span>
+		                        <i>提示：专属订制产品，需要相关证书认证时间。建议尽快提交。</i>
+		                    </div>
+                    		<!--订单-->
+		                    <table border="0" cellspacing="0" cellpadding="0" class="shop-adressqr-of">
+		                        <tbody>
+		                        	<tr class="shop-adressqr-first">
+			                            <td class="shop-adress-shoop">商 品</td>
+			                            <td class="shop-adress-cz">材 质</td>
+			                            <td class="shop-adress-sc">手寸/尺寸</td>
+			                            <td class="shop-adress-kz">刻 字</td>
+			                            <td class="shop-adress-pirce">价 格</td>
+			                        </tr>		                        
+	                                <!-- <tr class="shop-adressqr-sec">
+	                                    <td class="shop-adress-shoop">PRINCESS系列 花冠</td>
+	                                    <td class="shop-adress-cz">白18K金</td>
+	                                    <td class="shop-adress-sc">9</td>
+	                                    <td class="shop-adress-kz"></td>
+	                                    <td class="shop-adress-pirce"><span style="font-family: 微软雅黑">￥4399</span></td>
+	                                </tr>   -->                                              
+                    			</tbody>
+                    		</table>
+                    		<!--订单end-->
+                    		<!--总计-->
+		                    <div class="shop-adress-zj">
+		                        <div class="fl">
+		                            <span> 总计</span>
+		                        </div>
+		                        <div class="fr">
+		                            <i>1</i>
+		                             <span>件商品</span>
+		                            <span>应付金额：</span>		                          
+		                            <i class="fw-bold" style="font-family: 微软雅黑">￥4,399</i>
+		                        </div>
+		                    </div>
+                    		<!--总计-->
+                    		<!--最后一块-->
+		                    <div class="shop-adress-last">
+		                        <div class="shop-adress-ddbz fl">
+		                            <p> 订单备注</p>
+		                            <textarea name="ordernote" class="shop-adress-text" placeholder="此处请勿填写有关支付方面的信息,留言请在50字以内。"></textarea>
+		                        </div>
+		                        <div class="shop-adress-tjdd fr" onclick="submitOrder();">
+		                            <div class="bt1 fr indent-bt1">
+		                            	<span>立即提交订单</span>
+		                            </div>                            
+		                        </div>
+		                    </div>
+                    		<!--最后一块end-->
+                		</div>
+					</div>              
+				</div>
+				<div class="shop-cort-right fr">
+	            	<div class="shop-right-nr">
+	                	<h3>购物帮助指南</h3>
+	                    <div class="shop-right-zx line-bottom">
+	                    	<p class="shop-lx">24小时在线客服</p>
+	                        <p class="shop-tel">400-01-13520</p>
+	                    </div>
+	                    <div class="shop-right-zf line-bottom">
+	                    	<h4>支付安全保障</h4>
+	                        <p>安全支付系统采用SSL加密。</p>
+	                        <ul class="shop-right-ul">
+	                        	<li class="shop-cor-yl"></li>
+	                            <li class="shop-cor-cft"></li>
+	                            <li class="shop-cor-zf"></li>
+	                        </ul>
+	                    </div>
+	                    <div class="shop-right-ps">
+	                    	<h4>全球配送</h4>
+	                    	<p class="shop-kd">支持全球配送,店铺取货</p>
+	                        <p class="shop-bj">全程保价 无风险</p>
+	                    </div>
+	                </div>
+            	</div>
+			</div>
+		</div>
+		<!-- 提交订单 -->
+		<div class="submit-indent form-block">
+			<div class="submit-indent-nav"></div>
+			<div class="submit-indent-main">
+				<div class="shop_ofor-top">            
+	            	<img src="../images/right.png" width="54" height="67">
+	                <h3>订单提交成功，请您尽快完成支付！</h3>
+	                <h4>请您在24小时内完成付款，超过24小时后系统将自动取消订单。</h4>
+	                <p class="shop_ofor-font">
+	                	<span>订单号：20161103111415604166 | 应付总金额：</span>
+	                    <i style="font-family:微软雅黑;"></i>
+	                    <a href="/member/myorder.aspx" target="_blank">查看订单&gt;&gt;</a>
+	              	</p>
+	            </div>
+	            <div class="shop_oforpay fix">
+	                <h2 class="fl">网上支付方式</h2>
+	                <div class="shop_oforpayright fr">
+	                    <span>银行卡限额？没关系，我们支持</span>
+	                    <a href="ConfirmOrder_batch.aspx?orderid=20161103111415604166&amp;process=darryring&amp;continuepay=continuepay">分笔支付</a>
+	                </div>
+	            </div>
+	            <ul class="shop_ofor-bank">
+	            	<li>
+	                	<input type="radio" name="target" value="0005" checked="checked" id="bankgongshang">
+	                    <label for="bankgongshang">
+	                    	<img src="../images/bank1.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankpingan" value="14">
+	                    <label for="bankpingan">
+	                    <img src="../images/bank2.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankjianshe" value="1010">
+	                    <label for="bankjianshe">
+	                    <img src="../images/bank3.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="banknongye" value="43">
+	                    <label for="banknongye">
+	                    <img src="../images/bank4.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankzhaoshang" value="3">
+	                    <label for="bankzhaoshang">
+	                    <img src="../images/bank5.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankjiaotong" value="67">
+	                    <label for="bankjiaotong">
+	                    <img src="../images/bank6.jpg" width="160" height="43">
+	                	</label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankzhongxin" value="84">
+	                    <label for="bankzhongxin">
+	                    <img src="../images/bank7.jpg" width="160" height="43">
+	                	</label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankhuaxia" value="60">
+	                    <label for="bankhuaxia">
+	                    <img src="../images/bank8.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankpufa" value="1022">
+	                    <label for="bankpufa">
+	                    <img src="../images/bank9.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankdongya" value="0051">
+	                    <label for="bankdongya">
+	                    <img src="../images/bank10.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankguangfa" value="44">
+	                    <label for="bankguangfa">
+	                    <img src="../images/bank11.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankxingye" value="33">
+	                    <label for="bankxingye">
+	                    <img src="../images/bank12.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankmingsheng" value="28">
+	                    <label for="bankmingsheng">
+	                    <img src="../images/bank13.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankzhongguo" value="85">
+	                    <label for="bankzhongguo">
+	                    <img src="../images/bank14.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankguangda" value="74">
+	                    <label for="bankguangda">
+	                    <img src="../images/bank15.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankyouzheng" value="59">
+	                    <label for="bankyouzheng">
+	                    <img src="../images/bank16.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankzaixian" value="8607">
+	                    <label for="bankzaixian">
+	                    <img src="../images/bank17.jpg" width="160" height="43">
+	                    </label>
+	                </li>
+	                <li>
+	                	<input type="radio" name="target" id="bankzhifubao" value="alipay">
+	                    <label for="bankzhifubao">
+	                    	<img src="../images/bank18.jpg" width="160" height="43">
+	                    </label>
+	                </li>	                	                            
+	            </ul>
+	            <div class="shop_ofor-button">
+	            	<div class="bt3 submit-indent-bt3"><span>立即支付</span></div>
+	            </div>
+			</div>
+		</div>
+		<!-- 支付成功 -->
+		<div class="pay-success form-block">
+			<div class="submit-indent-main">
+				<div class="shop_ofor-top">            
+	            	<img src="../images/right.png" width="54" height="67">
+	                <h3>支付成功！</h3>
+	                <p class="shop_ofor-font">
+	                	<span>订单号：20161103111415604166</span>
+	                    <a href="/member/myorder.aspx" target="_blank">查看订单&gt;&gt;</a>
+	              	</p>
+	            </div>
+			</div>
+		</div>
+
+
+
+
+		<div class="cmain shop-foot" >
+	    	<p>Copyright © 2006-2015 www.darryring.com 戴瑞珠宝 All Rights Reserved. 粤ICP备11012085号</p>
+	        <p>中国互联网违法信息举报中心 | 中国公安网络110报警服务 | 本网站提供所售商品的正式发票</p>
+	        <div class="shop-foot-img">
+	        	<img src="../images/db.jpg" width="776" height="55">
+	        </div>
+    	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 微软雅黑;
+	list-style: none;
+	text-decoration: none;
+	box-sizing:border-box;
+}
+.qh-title{
+	width: 1000px;
+	margin: 0 auto;
+	height: 70px;
+	line-height: 70px;
+}
+.qh-title a,.qh-title span{
+	font-size: 14px;
+    color: #666;
+    padding-left: 6px;
+}
+.qh-title a:hover{
+	color: #dbc7ba;
+}
+.qh-title-left{
+	float: left;
+}
+.lunbo{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	clear: both;
+}
+
+.lunbo ul li a img {
+    position: absolute;
+    top: 0;
+}
+.lunbo ol{
+	width: 1000px;
+	height: 28px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+.lunbo ol a{
+	color: #fff;
+	opacity: 0.5;
+	float: left;
+	width: 250px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	border-right: 1px solid #fff;
+}
+.active{
+	background-color: rgba(4,4,4,0.7);
+}
+
+.shopServer {
+    width: 1000px;
+    margin: 20px auto;
+}
+.shopServerDic {
+    float: left;
+    width: 242px;
+    height: 100px;
+    padding-left: 82px;
+    margin-right: 10px;
+    background: #f8f8f8 url(../images/serverIcon.png) no-repeat;
+}
+.shopServerDic h3 {
+    line-height: 30px;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #c77a61;
+}
+.shopServerDic p {
+    padding-right: 1em;
+    font-size: 12px;
+    line-height: 20px;
+}
+.shopzjsd {
+    background-position: 14px 16px;
+}
+.shopgzzd {
+    background-position: 14px -184px;
+}
+.shopzjby {
+    background-position: 14px -384px;
+}
+.shopzjsj {
+    margin-right: 0;
+    background-position: 14px -584px;
+}
+.fix:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+}
+.shopSearch {
+	width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 20px 16px;
+    background: #f8f8f8;
+}
+.shopSearch span {
+    margin: 0 26px 0 14px;
+    font-size: 14px;
+}
+.shopSearch select {
+    width: 175px;
+    height: 25px;
+    color: #666;
+}
+.shopSearch .searchBtn {
+    height: 20px;
+    line-height: 20px;
+    padding: 2px 20px;
+    font-size: 14px;
+    border: 1px solid #c77a61;
+    color: #c77a61;
+    text-align: center;
+}
+.shopSearch .searchBtn:hover {
+    background:#c77a61;
+    color: #fff;
+}
+.shopListMain {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #888;
+}
+.shopList {
+    width: 1200px;
+}
+.shopInfo {
+    float: left;
+    width: 400px;
+    height: 180px;
+    margin: 0 200px 40px 0;
+}
+.shopInfo h4 {
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 18px;
+}
+.shopInfo h4 a {
+    color: #c77a61;
+}
+.shopInfo h4 .showMapBtn {
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    margin-left: 10px;
+    background: url(../images/shopIcon.png) no-repeat 2px 6px;
+}
+.shopInfo p {
+    line-height: 24px;
+}
+.marBot10 {
+    margin-bottom: 10px;
+}
+.subscribe {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -3px 7px #eeeded;
+    z-index: 5;
+}
+.subscribeBtn {
+    position: relative;
+    height: 80px;
+}
+.subscribeBtnBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url(../images/subscribe-bg.png) no-repeat center center;
+}
+.subscribeBtnMain .subscribeLink {
+    position: absolute;
+    top: 22px;
+    right: 152px;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    background: #c77a61;
+    border-bottom: 2px solid #683f31;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.subscribeBtnMain .subscribeLink:hover {
+    background: #d9856a;
+}

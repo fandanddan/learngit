@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DR登录</title>
+    <link rel="stylesheet" href="../css/sign.css">
+    <style>
+        ul li img{display:block; border: 0;}
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+        $(function(){
+            //手机号登录 
+            /*
+                取json值对比登录
+                正确登录
+                错误提示
+            */
+            var name = getCookie("name");
+            var password = getCookie("password");
+            var nameE = getCookie("nameE");
+            var passwordE = getCookie("passwordE");
+            $("#login-login").click(function(){
+                var iphone = $("#phone").val();
+                var pwdd = $("#pwd").val();
+                var url="../json/json.json";
+                var num=0;      
+                if(iphone=="" || pwdd==""){
+                    alert("用户名或密码为空");
+                }else{
+                    $.get(url,function (response,status,xhr){
+                        if(status==="success"){
+                            var obj = response;
+
+                            for(var i=0;i<obj.length;i++){
+                                if((iphone==name && pwdd==password) || (iphone==nameE && pwdd==passwordE) ||(iphone==obj[i].name && pwdd==obj[i].password)){
+                                    alert("登录成功");
+                                    window.open("index.html");
+                                }else{
+                                    
+                                    num++;
+                                }
+                            }
+                            if(num==obj.length){
+                                alert("账号密码错误");
+                            }
+                        }
+                    })          
+                }   
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="lunbo">
+        <div class="login-sign">
+            <div class="sign login">
+                <div class="email-phone-fix">
+                    <h3>DR族-登录</h3>
+                </div>
+                <form class="phone">
+                    <p id="tixing"></p>
+                    <input type="text" placeholder="请输入您的邮箱/手机号码" id="phone">
+                    <input type="password" placeholder="请输入密码" id="pwd">
+                    <p class="remember"><input type="checkbox" id="remember" >记住密码<a href="#" id="forget">忘记密码？</a></p>
+                    <input type="button" value="登录" id="login-login">
+                </form>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>

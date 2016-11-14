@@ -1,0 +1,248 @@
+.dr-main{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #f6efef;
+}
+.drshop-center{
+	width: 1000px;
+	margin: 0 auto;
+    padding-top: 70px;
+}
+.drshop-bg{
+	width: 100%;
+	background: url(../images/sbg1.jpg) repeat-x;
+    height: 69px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.drshop-bg img{
+	position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -73px;
+    z-index: 555;
+}
+.lunbo-box{
+	margin-top: 20px;
+	height: 400px;
+}
+.lunbo-left{
+	width: 50%;
+	height: 400px;
+	float: left;
+	background-color: #5e5e61;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+.lunbo-left h4{
+	width: 400px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 20px;
+    margin-top: 62px;
+}
+.lunbo-left p{
+	padding-top: 20px;
+    width: 398px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 22px;
+}
+.lunbo{
+	width: 50%;
+	height: 400px;
+	float: left;
+    overflow: hidden;
+}
+.lunboul{
+	width: 100%;
+	height: 470px;
+	position: relative;
+}
+.lunbo ul{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.lunboul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.lunbo ul li a{
+	display: block;
+	height: 565px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+}
+.lunbo ul li a img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.sankuai div{
+	float: left;
+	text-align: center;
+	position: relative;
+	height: 180px;
+}
+.culture1{
+	background: #e3d2c9;
+    width: 33.3%;
+    color: #666;
+}
+.culture1 a, .culture2 a, .culture3 a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+    background: #fff;
+}
+.sankuai h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 28px;
+}
+.culture-line {
+    border-top: 1px solid #5e5e61;
+    width: 76px;
+    height: 1px!important;
+    margin: 8px 130px;
+}
+.sankuai p {
+    background: url(../images/black_icon.png) no-repeat center bottom;
+    padding-bottom: 36px;
+}
+.sankuai p {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "SimSun";
+}
+.culture2 {
+    background: url(../images/whbk2.jpg) no-repeat;
+    width: 332px;
+    height: 180px;
+    color: #fff;
+}
+.culture-line-white {
+    border-top: 1px solid #ccc;
+    width: 76px;
+    height: 1px!important;
+    margin: 8px 130px;
+}
+.culture2 p {
+    background: url(../images/whrite_icon.png) no-repeat center bottom;
+    padding-bottom: 54px;
+}
+.culture3 {
+    background: #ccc;
+    width: 334px;
+    color: #666;
+}
+.culture3 p {
+    background: url(../images/black_icon.png) no-repeat center bottom;
+    padding-bottom: 54px;
+}
+.wukuai {
+	clear: both;
+    overflow: hidden;
+    padding-top: 60px;
+}
+.wukuai li {
+    float: left;
+    height: 430px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.team {
+    background: #dbc7ba;
+    width: 180px;
+}
+.wukuai a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+    background: #fff;
+}
+.team h3 {
+    color: #5e5e61;
+    margin-top: 102px;
+}
+.wukuai h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wukuai-line {
+    border-top: 1px solid #ddd;
+    width: 44px;
+    height: 1px;
+    margin: 8px auto 14px auto;
+}
+.team p {
+    background: url(../images/black_icon.png) no-repeat center bottom;
+    padding-bottom: 54px;
+}
+.wukuai p {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "SimSun";
+}
+.gongyi {
+    background: url(../images/pzbk1.jpg) no-repeat;
+    width: 200px;
+}
+.gongyi h3,.biaozhun h3{
+    margin-top: 74px;
+}
+.gongyi p, .biaozhun p {
+    background: url(../images/whrite_icon.png) no-repeat center bottom;
+    padding-bottom: 54px;
+}
+.zhuiqiu {
+    background: #ccc;
+    width: 236px;
+}
+.zhuiqiu h3 {
+    margin-top: 28px;
+    color: #5e5e61;
+}
+.wukuai-line-white{
+	border-top: 1px solid #fff;
+    width: 44px;
+    height: 1px;
+    margin: 8px auto 14px auto;
+}
+.zhuiqiu p, .drculture_pzcolor5 p {
+    padding-bottom: 22px;
+}
+.zhuiqiu-special, .renzheng-special {
+    background: url(../images/black_icon.png) no-repeat center bottom;
+    padding-bottom: 48px!important;
+}
+.biaozhun {
+    background: #5e5e61;
+    width: 200px;
+}
+.renzheng {
+    background: url(../images/pzbk2.jpg) no-repeat;
+    width: 184px;
+}
+.renzheng h3 {
+    margin-top: 104px;
+    color: #5e5e61;
+}

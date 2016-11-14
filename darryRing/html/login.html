@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DR登录</title>
+    <link rel="stylesheet" href="../css/sign.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+        ul li img{display:block; border: 0;}
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lunbo.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+    <div class="sign-head">
+        <div class="sign-head-center">
+            <div class="sign-head-left">
+                <a href="index.html"><img src="../images/logo.png" alt=""></a>
+            </div>
+            <div class="sign-head-right">
+                <div class="drmember_sec">
+                        <div class="dr_member-left fl">
+                            <a>登录</a>
+                            <a href="sign.html" class="drtojoin">加入DR族</a>
+                        </div>
+                        <div class="dr_member-left fl">
+                            <i>
+                                <img src="../images/phone.png">
+                                400 01 13520
+                            </i>
+                        </div>
+                        <div class="dr_member-left fl">
+                            <a href="#" target="_blank" class="help-right">帮助中心<span></span></a>
+                        </div>
+                    </div>
+            </div>
+        </div>        
+    </div>
+    <div class="lunbo">
+        <ul class="lunboul" id="uls">
+            <li><a href="#"><img src="../images/login.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../images/login2.jpg" alt=""></a></li>
+        </ul>
+        <ol class="ols">
+            <li class="active">●</li>
+            <li>●</li>
+        </ol>
+        <div class="login-sign">
+            <div class="sign login">
+                <div class="email-phone-fix">
+                    <h3>DR族-登录</h3>
+                </div>
+                <form class="phone">
+                    <p id="tixing"></p>
+                    <input type="text" placeholder="请输入您的邮箱/手机号码" id="phone">
+                    <input type="password" placeholder="请输入密码" id="pwd">
+                    <p class="remember"><input type="checkbox" id="remember" >记住密码<a href="#" id="forget">忘记密码？</a></p>
+                    <input type="button" value="登录" id="login-login">
+                    <a href="sign.html"><input type="button" value="立即加入DR族" id="join"></a>
+                </form>
+                <div class="sanfang">
+                    <p>第三方账户登录</p>
+                    <ul>
+                        <li>
+                            <a href="#" id="san-icon1"></a>
+                            <a href="#" id="san-icon2"></a>
+                            <a href="#" id="san-icon3"></a>
+                            <a href="#" id="san-icon4"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="footer">
+        <div class="footer-top"></div> 
+        <div class="service">
+            <ul>
+                <li><a href="#"><i class="icon1"></i>权威认证</a></li>
+                <li><a href="#"><i class="icon2"></i>一钻双证</a></li>
+                <li><a href="#"><i class="icon3"></i>终身保养</a></li>
+                <li><a href="#"><i class="icon4"></i>以小换大</a></li>
+                <li><a href="#"><i class="icon5"></i>15天退换</a></li>
+                <li><a href="#"><i class="icon6"></i>全国免运费</a></li>
+                <li><a href="#"><i class="icon7"></i>全程保险</a></li>
+            </ul>
+        </div>
+        <div class="footer-gray">
+            <ul id="ul-gray">
+                <li><a href="#">关注我们</a></li>
+                <li><a href="#">真爱查询</a></li>
+                <li><a href="#">实体店免费预约</a></li>
+                <li><a href="#">在线客服</a></li>
+                <li>24小时全国免费服务热线<img src="../images/tel.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="footer-black">
+            <div class="footer-black-c">
+                <div class="footer-black-top">
+                    <div class="fbtdiv fbtdiv-1">
+                        <ul>
+                            <li><b>关于我们</b></li>
+                            <li>权威认证</li>
+                            <li>合作专区</li>
+                            <li>加入我们</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>购物指南</b></li>
+                            <li>购买流程</li>
+                            <li>支付方式</li>
+                            <li>配送流程</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>售后服务</b></li>
+                            <li>退货流程</li>
+                            <li>办理售后</li>
+                            <li>15天退换</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>帮助中心</b></li>
+                            <li>注册流程</li>
+                            <li>联系客服</li>
+                            <li>网站地图</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>服务条款</b></li>
+                            <li>终生保养</li>
+                            <li>注册协议</li>
+                            <li>隐私声明</li>
+                        </ul>
+                    </div>
+                    <div class="fbtdiv">
+                        <ul>
+                            <li><b>DR资讯</b></li>
+                            <li>钻石百科</li>
+                            <li>产品百科</li>
+                            <li>求婚指南</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-black-jia"></div>
+                <div class="footer-black-mid">
+                    <p>Copyright  © 2006-2015 www.darryring.com 戴瑞珠宝 All Rights Reserved. 粤ICP备11012085号-2</p>
+                    <p>ICP经营许可证粤B2-20140279 | 中国互联网违法信息举报中心 | 中国公安网络110报警服务 | 本网站提供所售商品的正式发票</p>
+                </div>
+                <div class="footer-black-jia"></div>
+                <div class="footer-black-langues">
+                <a href="#">中文简体/</a>
+                <a href="#">English</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

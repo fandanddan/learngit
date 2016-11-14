@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Darry Ring首页</title>
+    <link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/footer.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(function () {
+          //小方块移动
+           var as = $(".drshop-main-ul li");  
+           var kuai = $(".line-kuai");
+           var line = $(".drshop-line1");
+           var a = as.width();
+           as.mouseover(function () {
+                var x = as.eq($(this).index()).width();
+                var l = as.eq($(this).index()).position().left;
+                var sum = x + l;
+                kuai.animate({left:sum},1000);
+                line.animate({width:sum},1000);
+
+            })
+           //侧边栏
+           $(window).scroll(function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop >=806){
+                $('.dr_quickservice').css("display","block");
+                
+              }else{
+                $('.dr_quickservice').css("display","none");
+              } 
+          });
+           //侧边购物车
+           $(".dr_quick-cort").eq(0).mouseover(function(){
+            $(".dr_quick2").css("background-position","-41px -33px");
+            $(".em3").css("opacity",1).css("display","block").css("right",0).css("width","143px").css("padding-right","10px");
+           })
+           $(".dr_quick-cort").eq(0).mouseout(function(){
+            $(".dr_quick-cort").eq(0).css("background","");
+            $(".dr_quick2").css("background-position","0px -33px");
+            $(".em3").css("display","none");
+           })
+           //侧边订单
+           $(".dr_quick-cort").eq(1).mouseover(function(){
+            $(".dr_quick3").css("background-position","-44px -74px");
+            $(".myindent").css("opacity",1).css("display","block").css("right",0).css("width","125px").css("padding-right","50px");
+           })
+           $(".dr_quick-cort").eq(1).mouseout(function(){
+            $(".dr_quick-cort").eq(1).css("background","");
+            $(".dr_quick3").css("background-position","-3px -74px");
+            $(".myindent").css("display","none");
+           })
+           //回到顶部
+           $(".dr_quick-cort").eq(6).mouseover(function(){
+            $(".dr_totop").css("background-position","-50px 0px");
+            $(".totop").css("opacity",1).css("display","block").css("z-index","-1").css("width","120px").css("padding-right","50px");
+           })
+           $(".dr_quick-cort").eq(6).mouseout(function(){
+            $(".dr_quick-cort").eq(6).css("background","");
+            $(".dr_totop").css("background-position","-0px -0px");
+            $(".totop").css("display","none");
+           })
+        })
+    </script>
+</head>
+<body>
+    <div class="dr-main">
+    	<div class="drshop">
+    		<div class="drshop-main">
+                <div class="drshop-main-position">
+        			<ul class="drshop-main-ul">
+        				<li><a href="#" id="country">全国一览</a></li>
+        				<li><a href="#" id="hk">香港</a></li>
+        				<li><a href="#" id="east">华东区</a></li>
+        				<li><a href="#" id="north">华北区</a></li>
+        				<li><a href="#" id="middle">华中区</a></li>
+        				<li><a href="#" id="south">华南区</a></li>
+        				<li><a href="#" id="west">西南区</a></li>
+        			</ul>
+        			<div class="line-kuai"></div>
+        			<div class="drshop-line1"></div>
+        			<div class="drshop-line"></div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- 侧边栏 -->
+    <div class="dr_quickservice" id="dr-quickservice" style="">
+        <!--在线客服-->
+        <div class="droline_kf droline_showkf">
+            <div class="droline_kfword">
+                <span></span>
+                <p style="width: 220px; height: 60px;">想了解更多钻石知识<br>我们有专业在线客服给您解答</p>
+            </div>
+            <img src="../images/zxkf.gif">
+            <span id="span_kf">在线<br>
+                客服
+            </span>
+            <em class="droline_yleft"></em>
+            <em class="droline_yright"></em>
+        </div>
+        <!--在线客服end-->
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="shop-cart.html" target="_blank" class="dr_quick2"></a>
+            <div class="dr_quick-word em3">
+                购物车
+            </div>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="shop-cart.html" target="_blank" class="dr_quick3"></a>
+            <div class="dr_quick-word myindent">
+                我的订单
+            </div>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="/member/myfavorites.html" class="dr_quick4"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a rel="nofollow" href="javascript:join_favorite();" class="dr_quick5"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a href="javascript:;" class="dr_quick6"></a>
+        </div>
+        <div class="dr_quick-cort" style="display: block">
+            <a href="#" class="dr_quick7"></a>
+        </div>
+        <div class="dr_quick-cort">
+            <a href="#backtop" class="dr_totop"></a>
+            <div class="dr_quick-word totop">
+                返回顶部
+            </div>
+        </div>
+    </div>
+</body>
+</html>
